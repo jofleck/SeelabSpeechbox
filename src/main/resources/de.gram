@@ -1,0 +1,7 @@
+#JSGF V1.0
+grammar test;
+  public <basicCmd> =  <startCommand> <switchCommand>;
+  <startCommand> = Haus;
+  <switchCommand> = ((schalte | mach) das Licht <room> (An | Aus));
+  <room> = (in der küche |im bad |im Büro |im flur |im Wohnzimmer | im Garten);
+
